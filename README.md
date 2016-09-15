@@ -1,4 +1,4 @@
-ClassSearch
+PlaylistManager
 
 This project was generated with angular-cli version 1.0.0-beta.10.
 
