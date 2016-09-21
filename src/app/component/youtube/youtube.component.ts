@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
+  // moduleId: module.id,
   selector: 'youtube',
-  templateUrl: './component/youtube/youtube.component.html'
+  templateUrl: './youtube.component.html'
 })
 export class YoutubeComponent {
 
