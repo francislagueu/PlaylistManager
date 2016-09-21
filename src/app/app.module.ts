@@ -4,10 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {NavbarComponent} from './component/navbar/navbar.component';
+import {FooterComponent} from './component/footer/footer.component';
+import {SpotifyComponent} from './component/spotify/spotify.component';
+import {YoutubeComponent} from './component/youtube/youtube.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    SpotifyComponent,
+    YoutubeComponent
   ],
   imports: [
     BrowserModule,
