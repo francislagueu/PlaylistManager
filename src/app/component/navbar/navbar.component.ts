@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  moduleId: module.id,
+  //moduleId: module.id,
   selector: 'navbar',
-  templateUrl: './component/navbar/navbar.component.html'
+  templateUrl: './navbar.component.html'
 })
 export class NavbarComponent {
 
