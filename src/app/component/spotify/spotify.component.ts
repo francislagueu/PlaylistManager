@@ -4,7 +4,8 @@ import {SpotifyService} from '../../services/spotify.service';
 @Component({
   moduleId: module.id,
   selector: 'spotify',
-  templateUrl: './component/spotify/spotify.component.html',
+  templateUrl: 'spotify.component.html',
+  styleUrls: ['spotify.component.css'],
   providers: [SpotifyService]
 })
 export class SpotifyComponent {

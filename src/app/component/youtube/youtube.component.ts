@@ -4,7 +4,8 @@ import {YoutubeService} from '../../services/youtube.service';
 @Component({
   moduleId: module.id,
   selector: 'youtube',
-  templateUrl: './component/youtube/youtube.component.html',
+  templateUrl: 'youtube.component.html',
+  styleUrls: ['youtube.component.css'],
   providers: [YoutubeService]
 })
 export class YoutubeComponent {
