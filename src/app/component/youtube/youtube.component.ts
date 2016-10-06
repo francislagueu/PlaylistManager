@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {YoutubeService} from '../../services/youtube.service';
-declare var gapi:any;
 @Component({
    moduleId: module.id,
   selector: 'youtube',
@@ -8,24 +7,20 @@ declare var gapi:any;
   styleUrls: ['youtube.component.css'],
   providers: [YoutubeService]
 })
-export class YoutubeComponent {
-	clientId:"788672495349-mmdrb1o2krhg9ll45mj750rah5fl57pe.apps.googleusercontent.com";
-	apiKey="smiling-castle-143717";
-	scopes = "https://www.googleapis.com/auth/youtube";
-	gapi;
-	auth2;
-    constructor(){
-      console.log('Youtube Service Init....');
-      gapi.load('client:auth2',this.initAuth());
+export class YoutubeComponent{
+	  // Auth:Promise<Object>; 
+    constructor(private ytservice: YoutubeService){
+
     }
     ngAfterViewInit(){
-    	this.initAuth();
-    	console.log("gapi", gapi);
-    }
-    public initAuth(){
-
-    }
-    public onSignIn(googleUser){
-
+      // console.log("service in afterinit: ", this.ytservice);
+      // this.ytservice.getAuth().then(
+      //   (response) =>{
+      //   this.Auth = response;
+      //   },
+      //   (reason) => {
+      //     console.log("failed to grab Auth object in component with reason: " + reason);
+      //   });
+      
     }
 }
