@@ -8,6 +8,7 @@ import {NavbarComponent} from './component/navbar/navbar.component';
 import {FooterComponent} from './component/footer/footer.component';
 import {SpotifyComponent} from './component/spotify/spotify.component';
 import {YoutubeComponent} from './component/youtube/youtube.component';
+import {RegisterComponent} from './component/register/register.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import {YoutubeComponent} from './component/youtube/youtube.component';
     NavbarComponent,
     FooterComponent,
     SpotifyComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
