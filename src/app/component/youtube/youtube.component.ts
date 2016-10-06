@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import {YoutubeService} from '../../services/youtube.service';
 @Component({
-   moduleId: module.id,
+   //moduleId: module.id,
   selector: 'youtube',
-  templateUrl: 'youtube.component.html',
-  styleUrls: ['youtube.component.css'],
+  templateUrl: './youtube.component.html',
+  styleUrls: ['./youtube.component.css'],
   providers: [YoutubeService]
 })
 export class YoutubeComponent{
-	  // Auth:Promise<Object>; 
+	  // Auth:Promise<Object>;
     constructor(private ytservice: YoutubeService){
 
     }
@@ -21,6 +21,6 @@ export class YoutubeComponent{
       //   (reason) => {
       //     console.log("failed to grab Auth object in component with reason: " + reason);
       //   });
-      
+
     }
 }

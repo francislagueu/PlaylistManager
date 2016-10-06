@@ -1,4 +1,4 @@
-/// <reference path="../../../typings/globals/gapi/index.d.ts" />
+
 import {Injectable} from '@angular/core';
 declare var gapi:any;
 
@@ -25,12 +25,12 @@ export class Google{
         this.clientId = "788672495349-mmdrb1o2krhg9ll45mj750rah5fl57pe.apps.googleusercontent.com";
         this.apiKey="smiling-castle-143717";
         this.scopes = "https://www.googleapis.com/auth/youtube";
-        
+
     }
-    
+
     init(){
         gapi.load('client:auth2', ()=>this.initClient());
-        
+
     }
     initClient(){
         gapi.auth2.init({
@@ -47,6 +47,5 @@ export class Google{
         );
 
     }
-   
-}
 
+}
