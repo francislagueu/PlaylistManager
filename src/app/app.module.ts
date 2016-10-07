@@ -8,9 +8,8 @@ import {NavbarComponent} from './component/navbar/navbar.component';
 import {FooterComponent} from './component/footer/footer.component';
 import {SpotifyComponent} from './component/spotify/spotify.component';
 import {YoutubeComponent} from './component/youtube/youtube.component';
-<<<<<<< Updated upstream
 import {RegisterComponent} from './component/register/register.component';
-=======
+
 //Firebase related imports
 import {AngularFireModule} from 'angularfire2';
 import {AuthProviders, AuthMethods} from 'angularfire2';
@@ -20,7 +19,7 @@ export const firebaseConfig = {
   databaseURL: 'https://playlistmanager-8f6e8.firebaseio.com',
   storageBucket:'playlistmanager-8f6e8.appspot.com'
 };
->>>>>>> Stashed changes
+
 
 export const myFirebaseAuthConfig = {
   provider: AuthProviders.Google,
