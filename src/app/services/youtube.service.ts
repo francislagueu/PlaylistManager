@@ -1,27 +1,22 @@
+<<<<<<< Updated upstream
 
+=======
+///<reference path="../../../typings/globals/gapi/index.d.ts" />
+>>>>>>> Stashed changes
 import {Injectable} from '@angular/core';
-declare var gapi:any;
-
 @Injectable()
 export class YoutubeService{
-	google;
     constructor(){
-    	this.google = new Google();
-        this.google.init();
-        //why the hell can i not see the auth2 class member here???!!!
-        console.log("prints as undefined", this.google.auth2);
-    }
+     
+}
+   
 }
 
 
 export class Google{
-    private clientId;
-    private apiKey;
-    private scopes;
-    private gapi;
-    auth2;
-    private client;
+    
     constructor(){
+<<<<<<< Updated upstream
         this.clientId = "788672495349-mmdrb1o2krhg9ll45mj750rah5fl57pe.apps.googleusercontent.com";
         this.apiKey="smiling-castle-143717";
         this.scopes = "https://www.googleapis.com/auth/youtube";
@@ -47,5 +42,11 @@ export class Google{
         );
 
     }
+=======
+       
+    }
+    
+}
+>>>>>>> Stashed changes
 
 }
