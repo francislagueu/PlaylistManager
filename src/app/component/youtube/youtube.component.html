@@ -1,0 +1,5 @@
+<div *ngIf = "_auth | async">You're logged in!</div>
+<div *ngIf = "!(_auth | async)">Please log in</div>
+<button ng-show="!(_auth | async)" (click) = "loginclicked()">Click to login</button>
+<!--<button ng-show = "" (click)>-->
+<!--<div *ngIf = "_auth | async">{{_auth}}</div>-->

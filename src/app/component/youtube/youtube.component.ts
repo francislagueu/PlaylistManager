@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Inject} from '@angular/core';
 import {YoutubeService} from '../../services/youtube.service';
+import {AngularFire, FirebaseListObservable,FirebaseAuth,AuthProviders} from 'angularfire2'
 @Component({
    //moduleId: module.id,
   selector: 'youtube',
@@ -7,20 +8,26 @@ import {YoutubeService} from '../../services/youtube.service';
   styleUrls: ['./youtube.component.css'],
   providers: [YoutubeService]
 })
-export class YoutubeComponent{
-	  // Auth:Promise<Object>;
-    constructor(private ytservice: YoutubeService){
 
+export class YoutubeComponent{ 
+    
+    constructor(@Inject(FirebaseAuth) public _auth: FirebaseAuth){
     }
-    ngAfterViewInit(){
-      // console.log("service in afterinit: ", this.ytservice);
-      // this.ytservice.getAuth().then(
-      //   (response) =>{
-      //   this.Auth = response;
-      //   },
-      //   (reason) => {
-      //     console.log("failed to grab Auth object in component with reason: " + reason);
-      //   });
-
+    //will change this
+    public loginclicked(){
+      this.doLogin();
     }
+    public logoutclicked(){
+      this.doLogout();
+    }
+    public doLogout(){
+      this._auth.logout();
+    }
+    public doLogin(){
+      this._auth.login();
+    }
+   ngAfterViewInit(){
+      console.log(this._auth);
+     
+   }
 }
